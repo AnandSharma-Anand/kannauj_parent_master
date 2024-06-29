@@ -1,0 +1,192 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coordinatorLayout"
+        android:background="@drawable/gradient2">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient2"
+            android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:fitsSystemWindows="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                        android:id="@+id/pulsator"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        app:pulse_count="2"
+                        android:alpha="1"
+                        app:pulse_duration="1100"
+                        app:pulse_repeat="0"
+                        app:pulse_color="@color/colorAccent"
+                        app:pulse_startFromScratch="false"
+                        app:pulse_interpolator="Decelerate">
+                    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+                    <ImageView
+                        android:id="@+id/ivImg"
+                        android:src="@drawable/girl_1"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:letterSpacing="0.1"
+                        android:textSize="17sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_below="@+id/ivImg"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:text="Phoebe Buffay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tvClass"
+                        android:letterSpacing="0.1"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@+id/tvName"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#939393"
+                        android:text="Principal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/ivInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_info" />
+                </RelativeLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:elevation="10dp"
+                    android:translationZ="5dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:background="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rlFeed"
+                        android:clickable="true"
+                        android:background="@drawable/btn_default_dark"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardFeed"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#82ffffff"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvFeed"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.1"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="#fff"
+                                android:text="Feed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlMenu"
+                        android:clickable="true"
+                        android:background="@drawable/btn_default_dark"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardMenu"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="#00000000"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvMenu"
+                                android:letterSpacing="0.1"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="#ccc"
+                                android:text="Menu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_below="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.viewpager.widget.ViewPager>
+
+
+            </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+        <include layout="@layout/bottom_sheet_students" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

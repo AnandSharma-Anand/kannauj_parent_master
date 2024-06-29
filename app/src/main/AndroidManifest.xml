@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="app.added.kannauj.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity
+            android:name="app.added.kannauj.activities.SolutionActivity"
+            android:exported="false"/>
+        <activity
+            android:name="app.added.kannauj.activities.ViewImageActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="app.added.kannauj.activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.added.kannauj.activities.CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.TimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.GalleryActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.AlbumActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.NoticeViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.ChatMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.FeeActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.AssignmentActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.SyllabusTrackerActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.ReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.TrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.AssignmentSubmitActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.EDiaryViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.FeeReceiptActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.SelectExamActivity"
+            android:exported="false" />
+        <activity
+            android:name="app.added.kannauj.activities.ExamActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name="app.added.kannauj.FCM.FCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <service
+            android:name="app.added.kannauj.Utils.MessagingService"
+            android:enabled="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="app.added.kannauj.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/my_paths" />
+        </provider>
+
+        <activity
+            android:name="app.added.kannauj.activities.ImagePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="#232527"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImg"
+                android:padding="3dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/notice"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:letterSpacing="0.1"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/ivImg"
+                android:layout_marginLeft="14dp"
+                android:text="Birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvDetail"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="3dp"
+                android:textSize="13sp"
+                android:textColor="#aaa"
+                android:layout_below="@+id/tvTitle"
+                android:layout_toRightOf="@+id/ivImg"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:text="Today is birthday of a student named Amit Prakash from your class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSubDetail"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="3dp"
+                android:textSize="13sp"
+                android:textColor="#aaa"
+                android:layout_below="@+id/tvDetail"
+                android:layout_toRightOf="@+id/ivImg"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:text="Today is birthday of a student named Amit Prakash from your class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

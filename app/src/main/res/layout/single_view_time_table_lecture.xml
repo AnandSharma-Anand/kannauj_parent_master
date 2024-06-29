@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#232527"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/tvLectureNo"
+        android:layout_centerVertical="true"
+        android:text="Lecture 1"
+        android:letterSpacing="0.1"
+        android:layout_marginLeft="20dp"
+        android:textColor="#dadbdc"
+        android:textSize="12.6sp"
+        android:lineSpacingExtra="3dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_marginLeft="15dp"
+        android:background="#3e4248"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tvLectureNo"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/divider"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:text="Mathematics"
+            android:letterSpacing="0.1"
+            android:textColor="#dadbdc"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvClass"
+            android:layout_marginTop="4dp"
+            android:text="Class VIII - A"
+            android:letterSpacing="0.1"
+            android:textColor="#a9aaac"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

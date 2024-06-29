@@ -1,0 +1,62 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dark_gradient"
+    android:id="@+id/parentLayout"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tvTimer"
+        android:layout_marginBottom="14dp"
+        android:letterSpacing="0.1"
+        android:text="Select Exams"
+        android:textColor="#dddddd"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="14dp"
+        android:letterSpacing="0.1"
+        android:text="30:00"
+        android:textColor="#dddddd"
+        android:textSize="22sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/tvTimer"
+        android:layout_above="@+id/tvSubmit"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:translationZ="4dp"
+        android:elevation="4dp"
+        android:id="@+id/buttonSubmit"
+        android:textColor="#fff"
+        android:letterSpacing="0.15"
+        android:background="#358E38"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+</RelativeLayout>
+</layout>

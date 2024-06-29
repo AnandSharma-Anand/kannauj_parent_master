@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:textSize="14sp"
+    android:letterSpacing="0.1"
+    android:text="00"
+    />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCircle"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="#fff"
+        android:layout_width="4dp"
+        android:layout_height="4dp">
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/dark_gradient"
+        android:layout_width="match_parent"
+        android:id="@+id/parentLayout"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:letterSpacing="0.1"
+            android:text="Chat"
+            android:textColor="#dddddd"
+            android:textSize="17sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            android:layout_above="@+id/bottomLayout"
+            android:layout_below="@+id/tvTitle"
+            android:layout_width="match_parent"
+            app:reverseLayout="true"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/bottomLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="#111111"
+            android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/etMsg"
+            android:letterSpacing="0.1"
+            android:paddingLeft="22dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:textColor="#C3C8CE"
+            android:hint="Type your message"
+            android:textColorHint="#696969"
+            android:layout_toLeftOf="@+id/ivSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/ivSend"
+                android:padding="11dp"
+                android:clickable="true"
+                android:background="@drawable/btn_default_dark"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/send"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

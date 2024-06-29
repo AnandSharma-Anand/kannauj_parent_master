@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:background="@color/grey_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:text="April"
+            android:letterSpacing="0.1"
+            android:textSize="16sp"
+            android:textColor="#E8E9EC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvAdmission"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Admission Fee"
+            android:letterSpacing="0.1"
+            android:textSize="14sp"
+            android:textColor="#CED0D3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvAdmissionDetails"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:text="Amount Payable : 180 | Amount Paid : 200 | Due Amount : -20"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            android:textColor="#929496"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTution"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Tution Fee"
+            android:letterSpacing="0.1"
+            android:textSize="14sp"
+            android:textColor="#CED0D3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTutionDetails"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:text="Amount Payable : 180 | Amount Paid : 200 | Due Amount : -20"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            android:textColor="#929496"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvComputer"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Computer Fee"
+            android:letterSpacing="0.1"
+            android:textSize="14sp"
+            android:textColor="#CED0D3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvComputerDetails"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:text="Amount Payable : 180 | Amount Paid : 200 | Due Amount : -20"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            android:textColor="#929496"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvExam"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Exam Fee"
+            android:letterSpacing="0.1"
+            android:textSize="14sp"
+            android:textColor="#CED0D3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvExamDetails"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:text="Amount Payable : 180 | Amount Paid : 200 | Due Amount : -20"
+            android:letterSpacing="0.1"
+            android:textSize="13sp"
+            android:textColor="#929496"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
