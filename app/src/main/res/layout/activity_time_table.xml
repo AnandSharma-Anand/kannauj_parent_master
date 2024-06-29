@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dark_gradient"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/timeTablePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.PagerTitleStrip
+            android:id="@+id/titleStrip"
+            android:translationZ="5dp"
+            android:elevation="5dp"
+            android:background="#232527"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager.widget.PagerTitleStrip>
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
+</layout>

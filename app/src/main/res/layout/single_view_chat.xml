@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/ivImg"
+        android:src="@drawable/girl_1"
+        android:scaleType="centerCrop"
+        android:layout_margin="15dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_toRightOf="@+id/ivImg"
+        android:layout_alignTop="@+id/ivImg"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:letterSpacing="0.1"
+        android:text="Anamika Singh"
+        android:textColor="#C3C8CE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvSubject"
+        android:layout_below="@id/tvName"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:textSize="13sp"
+        android:letterSpacing="0.1"
+        android:text="Maths"
+        android:singleLine="true"
+        android:textColor="#868B8F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_alignParentBottom="true"
+        android:background="#323435"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/ivUnread"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@color/app_green"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

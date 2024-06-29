@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvLogo"
+        android:letterSpacing="0.2"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:text="Add-Ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_below="@+id/tvLogo"
+        android:letterSpacing="0.1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="Welcome,"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvLoginMsg"
+        android:layout_below="@+id/tvWelcome"
+        android:letterSpacing="0.1"
+        android:textSize="16sp"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="Login with Contact No."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContact"
+        app:cardElevation="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#82ffffff"
+        android:layout_below="@+id/tvLoginMsg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:textColor="#fff"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="14sp"
+            android:letterSpacing="0.1"
+            android:inputType="number"
+            android:hint="Enter Contact No."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOTP"
+        app:cardElevation="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#82ffffff"
+        android:layout_below="@+id/cardContact"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:textCursorDrawable="@null"
+            android:background="@null"
+            android:textColor="#fff"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="14sp"
+            android:letterSpacing="0.1"
+            android:inputType="number"
+            android:hint="Enter OTP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSubmit"
+        android:clickable="true"
+        android:foreground="@drawable/btn_default_light"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#ffffff"
+        android:layout_below="@+id/cardOTP"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    <TextView
+        android:textColor="#0072ff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:layout_gravity="center"
+        android:text="LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

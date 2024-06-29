@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:clickable="true"
+    android:id="@+id/rlMenuItemLayout"
+    android:background="@drawable/btn_default_dark"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/calendar"
+        android:padding="0dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvItem"
+        android:textAlignment="center"
+        android:letterSpacing="0.1"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ivIcon"
+        android:text="Calendar"
+        android:textSize="13sp"
+        android:textColor="#ccc"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivNew"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_new" />
+</RelativeLayout>

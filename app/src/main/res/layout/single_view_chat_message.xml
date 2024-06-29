@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/llLeft"
+        android:layout_marginLeft="6dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="7"
+            app:cardBackgroundColor="#0f4ecb"
+            android:layout_width="0dp"
+            app:cardCornerRadius="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvLeft"
+                android:letterSpacing="0.1"
+                android:text="Look, I wanted to work for today."
+                android:padding="10dp"
+                android:textColor="#DBDEE2"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRight"
+        android:visibility="gone"
+        android:layout_marginLeft="6dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/transparent"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="7"
+            app:cardBackgroundColor="#19191A"
+            android:layout_width="0dp"
+            app:cardCornerRadius="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvRight"
+                android:letterSpacing="0.1"
+                android:text="Do you feel that there is nothing to do?"
+                android:padding="10dp"
+                android:textColor="#9B9DA0"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

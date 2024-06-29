@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0f4ecb</color>
+
+    <color name="btn_default_light_normal">#00000000</color>
+    <color name="btn_default_bottom_normal">#F9FAFB</color>
+    <color name="btn_default_light_pressed">#97000000</color>
+    <color name="btn_default_dark_pressed">#97f1f1f1</color>
+
+    <color name="grey_bg">#232527</color>
+
+    <color name="app_green">#5EFF73</color>
+    <color name="app_red">#FF5D5D</color>
+    <color name="app_grey">#515557</color>
+
+
+
+    <!--Calendar Colors-->
+
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+    
+    <color name="placeholder_bg_color">#dddddd</color>
+
+</resources>

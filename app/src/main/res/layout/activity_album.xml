@@ -1,0 +1,81 @@
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/dark_gradient"
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:letterSpacing="0.1"
+            android:text="Album Name"
+            android:textColor="#dddddd"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlView"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <View
+                android:layout_marginTop="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:background="#3e3e40"
+                android:layout_height="1dp"/>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:background="#3e3e40"
+                android:layout_marginBottom="1dp"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvGrid"
+                    android:text="GRID"
+                    android:letterSpacing="0.15"
+                    android:padding="15dp"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    android:textColor="#c7c9ca"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tvList"
+                    android:text="LIST"
+                    android:letterSpacing="0.15"
+                    android:padding="15dp"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    android:textColor="#787a7c"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAlbum"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/rlView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+</layout>

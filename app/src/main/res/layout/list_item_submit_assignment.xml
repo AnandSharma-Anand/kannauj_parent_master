@@ -1,0 +1,110 @@
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/grey_bg">
+
+            <TextView
+                android:id="@+id/tvSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:paddingRight="16dp"
+                android:text="Heading"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSubject"
+                android:letterSpacing="0.1"
+                android:paddingLeft="16dp"
+                android:paddingTop="14dp"
+                android:paddingRight="16dp"
+                android:text="Heading"
+                android:textColor="#CACACA"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHeading"
+                android:letterSpacing="0.06"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="3dp"
+                android:text="Chapter"
+                android:textColor="#B6B6B6"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvChapter"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="1dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="2dp"
+                android:text="Chapter"
+                android:textColor="#707070"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDate"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:lineSpacingExtra="1dp"
+                    android:padding="5dp"
+                    android:text=" View "
+                    android:textAllCaps="true"
+                    android:textColor="#4ccdff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvUpload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:lineSpacingExtra="1dp"
+                    android:padding="5dp"
+                    android:text=" Upload "
+                    android:textAllCaps="true"
+                    android:textColor="#FC2346"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

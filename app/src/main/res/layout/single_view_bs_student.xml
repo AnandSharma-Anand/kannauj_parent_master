@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:id="@+id/rl"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivImg"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_below="@+id/ivImg"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="Sameer Singh Bisht"
+        android:paddingLeft="10dp"
+        android:letterSpacing="0.1"
+        android:textColor="#B3B3B3"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
